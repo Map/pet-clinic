@@ -96,7 +96,7 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/Map/pet-clinic</developerConnection>
+		<developerConnection>scm:git:git@github.com:Map/pet-clinic.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
