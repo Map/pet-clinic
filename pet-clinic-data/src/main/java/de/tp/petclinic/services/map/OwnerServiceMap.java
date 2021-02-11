@@ -7,6 +7,7 @@ import de.tp.petclinic.services.PetService;
 import de.tp.petclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -14,6 +15,11 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
 
     private final PetTypeService petTypeService;
     private final PetService petService;
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return null;
+    }
 
     public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
         this.petTypeService = petTypeService;

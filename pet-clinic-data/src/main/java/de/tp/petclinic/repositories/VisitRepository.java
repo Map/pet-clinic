@@ -1,6 +1,6 @@
 package de.tp.petclinic.repositories;
 
-import guru.springframework.sfgpetclinic.model.Visit;
+import de.tp.petclinic.model.Visit;
 import org.springframework.data.repository.CrudRepository;
 
 /**

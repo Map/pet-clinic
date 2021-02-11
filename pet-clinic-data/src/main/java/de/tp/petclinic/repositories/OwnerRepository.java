@@ -1,6 +1,6 @@
 package de.tp.petclinic.repositories;
 
-import guru.springframework.sfgpetclinic.model.Owner;
+import de.tp.petclinic.model.Owner;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
