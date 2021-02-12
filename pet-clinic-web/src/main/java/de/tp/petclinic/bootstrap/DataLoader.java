@@ -2,14 +2,15 @@ package de.tp.petclinic.bootstrap;
 
 import de.tp.petclinic.model.*;
 import de.tp.petclinic.services.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
+
+@Slf4j
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -19,7 +20,6 @@ public class DataLoader implements CommandLineRunner {
     private final PetTypeService petTypeService;
     private final SpecialtiesService specialtiesService;
     private final VisitService visitService;
-    private final Logger log = LoggerFactory.getLogger(DataLoader.class);
 
     @Autowired
     public DataLoader(OwnerService ownerService, VetService vetService, PetService petService, PetTypeService petTypeService, SpecialtiesService specialtiesService, VisitService visitService) {
@@ -108,8 +108,7 @@ public class DataLoader implements CommandLineRunner {
         vet1.setFirstName("Sam");
         vet1.setLastName("Axe");
         vet1.getSpecialties().add(savedRadiology);
-
-        log.debug("saving vet1");
+        log.debug("##################");
         vetService.save(vet1);
         Vet vet2 = new Vet();
         vet2.setFirstName("Jessie");
