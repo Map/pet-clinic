@@ -51,13 +51,13 @@ public class Pet extends BaseEntity {
     @JoinColumn(name = "owner_id")
     private Owner owner;
 
-    public LocalDate getBirthdate() {
-        return birthdate;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthdate(LocalDate birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthDate(LocalDate birthdate) {
+        this.birthDate = birthdate;
     }
 
-    private LocalDate birthdate;
+    private LocalDate birthDate;
 }
